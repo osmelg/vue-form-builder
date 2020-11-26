@@ -1,7 +1,7 @@
 <template>
-    <SidebarToggleableContainer headline="Styling/Classes">
+    <SidebarToggleableContainer headline="Estilos/Clases">
         <div :class="styles.FORM.FORM_GROUP">
-            <label>Container Size Class</label>
+            <label>builderLabelStyleContainerClass</label>
             <select :class="styles.FORM.FORM_CONTROL" v-model="control.containerClass">
                 <option v-for="(className, classID) in containerClasses"
                         :key="className"
@@ -12,17 +12,17 @@
         </div>
 
         <div :class="styles.FORM.FORM_GROUP">
-            <label>Container Additional Classes</label>
+            <label>builderLabelStyleContainerAdditionalCasses</label>
             <input type="text" :class="styles.FORM.FORM_CONTROL" v-model="control.additionalContainerClass">
         </div>
 
         <div :class="styles.FORM.FORM_GROUP">
-            <label>Control Field Additional Classes</label>
+            <label>builderLabelStyleControlAdditionalClasses</label>
             <input type="text" :class="styles.FORM.FORM_CONTROL" v-model="control.additionalFieldClass">
         </div>
 
         <div :class="styles.FORM.FORM_GROUP">
-            <label>Control-Label Additional Classes</label>
+            <label>builderStyleControlLabelClasess</label>
             <input type="text" :class="styles.FORM.FORM_CONTROL" v-model="control.additionalLabelClass">
         </div>
     </SidebarToggleableContainer>

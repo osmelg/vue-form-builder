@@ -1,30 +1,30 @@
 <template>
     <div class="sidebar-form-configuration">
-        <h5>Section Configuration</h5>
+        <h5>builderHSectionConfiguration</h5>
 
         <div :class="styles.FORM.FORM_GROUP">
-            <label>Headline</label>
+            <label>builderLabelHeadline</label>
             <input type="text"
                    :class="styles.FORM.FORM_CONTROL"
                    v-model="sectionConfiguration.headline">
         </div>
 
         <div :class="styles.FORM.FORM_GROUP">
-            <label>Headline Additional Class (CSS)</label>
+            <label>builderLabelShowHeadlineAdditionalClass</label>
             <input type="text"
                    :class="styles.FORM.FORM_CONTROL"
                    v-model="sectionConfiguration.headlineAdditionalClass">
         </div>
 
         <div :class="styles.FORM.FORM_GROUP">
-            <label>Sub-Headline</label>
+            <label>builderLabelShowFormHeadline</label>
             <input type="text"
                    :class="styles.FORM.FORM_CONTROL"
                    v-model="sectionConfiguration.subHeadline">
         </div>
 
         <div :class="styles.FORM.FORM_GROUP">
-            <label>Sub-Headline Additional Class (CSS)</label>
+            <label>builderLabelShowHeadlineAdditionalClass</label>
             <input type="text"
                    :class="styles.FORM.FORM_CONTROL"
                    v-model="sectionConfiguration.subHeadlineAdditionalClass">
@@ -32,17 +32,17 @@
 
         <div :class="styles.FORM.FORM_GROUP">
             <label>
-                Show Section Headline?
+                builderLabelShowFormHeadline?
                 <input type="checkbox" v-model="sectionConfiguration.isShowHeadline">
             </label>
         </div>
 
         <div class="buttons">
             <button :class="styles.BUTTON.PRIMARY" @click="save(false)">
-                Save
+                builderButtonSave
             </button>
             <button :class="styles.BUTTON.INFO" @click="save(true)">
-                Save & Close
+                builderButtonSaveAndClose
             </button>
         </div>
     </div>

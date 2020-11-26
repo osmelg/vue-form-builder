@@ -1,8 +1,7 @@
 <template>
     <div class="form-configuration-block pbottom-10">
         <button :class="styles.BUTTON.PRIMARY" @click="open">
-            <span v-html="$form.getIcon('cog')"></span>
-            <span>OG</span>
+            <span>builderButtonCreate</span>
         </button>
 
     </div>

@@ -39,7 +39,7 @@
                                  :parent-id="section.uniqueId" />
 
                     <p v-if="!hasControl">
-                        Droppable Zone / Controls will be showed here...
+                        builderTextDroppableZoneControls
                     </p>
                 </draggable>
 

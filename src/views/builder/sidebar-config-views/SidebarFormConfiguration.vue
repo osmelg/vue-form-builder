@@ -1,16 +1,16 @@
 <template>
     <div class="sidebar-form-configuration">
-        <h5>Main Form Configuration</h5>
+        <h5>builderHMainFormConfiguration</h5>
 
         <div :class="styles.FORM.FORM_GROUP">
-            <label>Form Headline</label>
+            <label>builderLabelFormHeadline</label>
             <input type="text"
                    :class="styles.FORM.FORM_CONTROL"
                    v-model="formConfiguration.headline">
         </div>
 
         <div :class="styles.FORM.FORM_GROUP">
-            <label>Form Sub-Headline</label>
+            <label>builderLabelFormSubHeadline</label>
             <input type="text"
                    :class="styles.FORM.FORM_CONTROL"
                    v-model="formConfiguration.subHeadline">
@@ -18,14 +18,14 @@
 
         <div :class="styles.FORM.FORM_GROUP">
             <label>
-                Show Form Headline?
+                builderLabelShowFormHeadline
                 <input type="checkbox" v-model="formConfiguration.isShowHeadline">
             </label>
         </div>
 
         <div :class="styles.FORM.FORM_GROUP">
             <label>
-                Wrapper &#x3C;form&#x3E; outside of the Form?
+                builderLabelFormWrapper
                 <input type="checkbox" v-model="formConfiguration.renderFormTag">
             </label>
         </div>
@@ -50,10 +50,10 @@
 
         <div class="buttons">
             <button :class="styles.BUTTON.PRIMARY" @click="save(false)">
-                Save
+                builderButtonSave
             </button>
             <button :class="styles.BUTTON.INFO" @click="save(true)">
-                Save & Close
+                builderButtonSaveAndClose
             </button>
         </div>
     </div>

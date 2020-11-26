@@ -1,39 +1,39 @@
 <template>
-    <SidebarToggleableContainer headline="Basic Detail">
+    <SidebarToggleableContainer headline="Detalles basicos">
         <div :class="styles.FORM.FORM_GROUP">
-            <label>Unique ID</label>
+            <label>builderLabelFormUniqueId</label>
             <input type="text" :class="styles.FORM.FORM_CONTROL" :value="control.uniqueId" readonly>
         </div>
 
         <div :class="styles.FORM.FORM_GROUP">
-            <label>Name (Must be unique)</label>
+            <label>builderLabelFormName</label>
             <input type="text" :class="styles.FORM.FORM_CONTROL" v-model="control.name">
         </div>
 
         <div :class="styles.FORM.FORM_GROUP">
-            <label>Label</label>
+            <label>builderFormLabel</label>
             <input type="text" :class="styles.FORM.FORM_CONTROL" v-model="control.label">
         </div>
 
         <div :class="styles.FORM.FORM_GROUP">
-            <label>Sub-label</label>
+            <label>builderFormSubLabel</label>
             <input type="text" :class="styles.FORM.FORM_CONTROL" v-model="control.subLabel">
         </div>
 
         <div :class="styles.FORM.FORM_GROUP">
             <label>
-                Show Label?
+                builderFormShowLabel
                 <input type="checkbox" v-model="control.isShowLabel">
             </label>
         </div>
 
         <div :class="styles.FORM.FORM_GROUP">
-            <label>Field Placeholder (Optional)</label>
+            <label>builderFormPlaceholder</label>
             <input type="text" :class="styles.FORM.FORM_CONTROL" v-model="control.placeholderText">
         </div>
 
         <div :class="styles.FORM.FORM_GROUP">
-            <label>Default Value (Optional)</label>
+            <label>builderFormDefaultValue</label>
             <input type="text" :class="styles.FORM.FORM_CONTROL" v-model="control.defaultValue">
         </div>
 

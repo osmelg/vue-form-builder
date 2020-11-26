@@ -43,7 +43,8 @@ const STYLES = {
      * Button Classes
      */
     BUTTON: {
-        PRIMARY: "btn btn-primary md-button md-raised md-primary md-theme-default",
+        PRIMARY: "button is-primary",
+        // PRIMARY: "btn btn-primary md-button md-raised md-primary md-theme-default",
         SECONDARY: "btn btn-secondary md-button md-raised md-secondary md-theme-default",
         DEFAULT: "btn btn-default md-button md-raised md-default md-theme-default",
         SUCCESS: "btn btn-success md-button md-raised md-success md-theme-default",

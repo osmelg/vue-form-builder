@@ -2,7 +2,7 @@
     <SidebarToggleableContainer headline="Validation">
 
         <label>
-            Validation Rules
+            builderLabelValidationTitle
             <span class="pointer"
                   title="Click this to add a new rule"
                   @click="addNewRule"
@@ -23,12 +23,12 @@
             </div>
 
             <div :class="[styles.FORM.FORM_GROUP]">
-                <label>Validation Rule</label>
+                <label>builderLabelValidationRule</label>
                 <select :class="styles.FORM.FORM_CONTROL"
                         @change="updateDefaultErrorMessage(addedRule)"
                         v-model="addedRule.ruleType">
 
-                    <option selected disabled>Choose a Rule</option>
+                    <option selected disabled>builderOptionChooseARule</option>
 
                     <option v-for="(ruleName, ruleIndex) in getRuleList(addedRule.ruleType)"
                             :key="ruleIndex"
@@ -46,7 +46,7 @@
             <div :class="styles.FORM.FORM_GROUP"
                  v-show="getRuleInfo(addedRule.ruleType, 'needValue')">
 
-                <label>Rule Value</label>
+                <label>builderLabelValidationRuleValue</label>
                 <input type="text"
                        :class="styles.FORM.FORM_CONTROL"
                        :placeholder="getRuleInfo(addedRule.ruleType, 'valueInfo')"
@@ -56,7 +56,7 @@
 
             <div :class="styles.FORM.FORM_GROUP">
 
-                <label>Default Error Message</label>
+                <label>builderLabelValidationDefaultErrorMessage</label>
                 <input type="text"
                        :class="styles.FORM.FORM_CONTROL"
                        v-model="addedRule.errorMessage">
