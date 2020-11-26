@@ -1,6 +1,6 @@
 <template>
     <div class="sidebar-form-configuration">
-        <h5>builderHControlConfiguration</h5>
+        <h5>{{$t('builderHControlConfiguration')}}</h5>
 
         <!-- Basic of the control/Same for all -->
         <ControlBasicInformation :control="control" />
@@ -22,10 +22,10 @@
 
         <div class="buttons">
             <button :class="styles.BUTTON.PRIMARY" @click="save(false)">
-                builderButtonSave
+                {{$t('builderButtonSave')}}
             </button>
             <button :class="styles.BUTTON.INFO" @click="save(true)">
-                builderButtonSaveAndClose
+                {{$t('builderButtonSaveAndClose')}}
             </button>
         </div>
     </div>

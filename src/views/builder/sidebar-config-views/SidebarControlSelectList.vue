@@ -1,7 +1,7 @@
 <template>
     <div class="sidebar-form-configuration">
 
-        <h5>builderHChooseElementsTitle</h5>
+        <h5>{{$t('builderHChooseElementsTitle')}}</h5>
 
 
         <div :class="[styles.LIST_GROUP.CONTAINER]">

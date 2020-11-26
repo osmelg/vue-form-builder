@@ -1,30 +1,30 @@
 <template>
     <div class="sidebar-form-configuration">
-        <h5>builderHSectionConfiguration</h5>
+        <h5>{{$t('builderHSectionConfiguration')}}</h5>
 
         <div :class="styles.FORM.FORM_GROUP">
-            <label>builderLabelHeadline</label>
+            <label>{{$t('builderLabelHeadline')}}</label>
             <input type="text"
                    :class="styles.FORM.FORM_CONTROL"
                    v-model="sectionConfiguration.headline">
         </div>
 
         <div :class="styles.FORM.FORM_GROUP">
-            <label>builderLabelShowHeadlineAdditionalClass</label>
+            <label>{{$t('builderLabelShowHeadlineAdditionalClass')}}</label>
             <input type="text"
                    :class="styles.FORM.FORM_CONTROL"
                    v-model="sectionConfiguration.headlineAdditionalClass">
         </div>
 
         <div :class="styles.FORM.FORM_GROUP">
-            <label>builderLabelShowFormHeadline</label>
+            <label>{{$t('builderLabelShowFormHeadline')}}</label>
             <input type="text"
                    :class="styles.FORM.FORM_CONTROL"
                    v-model="sectionConfiguration.subHeadline">
         </div>
 
         <div :class="styles.FORM.FORM_GROUP">
-            <label>builderLabelShowHeadlineAdditionalClass</label>
+            <label>{{$t('builderLabelShowHeadlineAdditionalClass')}}</label>
             <input type="text"
                    :class="styles.FORM.FORM_CONTROL"
                    v-model="sectionConfiguration.subHeadlineAdditionalClass">
@@ -32,17 +32,17 @@
 
         <div :class="styles.FORM.FORM_GROUP">
             <label>
-                builderLabelShowFormHeadline?
+                {{$t('builderLabelShowFormHeadline')}}?
                 <input type="checkbox" v-model="sectionConfiguration.isShowHeadline">
             </label>
         </div>
 
         <div class="buttons">
             <button :class="styles.BUTTON.PRIMARY" @click="save(false)">
-                builderButtonSave
+                {{$t('builderButtonSave')}}
             </button>
             <button :class="styles.BUTTON.INFO" @click="save(true)">
-                builderButtonSaveAndClose
+                {{$t('builderButtonSaveAndClose')}}
             </button>
         </div>
     </div>

@@ -15,8 +15,8 @@ import RendererToggleableSectionView from "@/views/renderer/section-views/Toggle
 
 const SECTION_TYPES = {
     normal: {
-        name: "builderPNormalBlock",
-        description: "builderPNormalBlockWithHeadline",
+        name: "Bloque normal",
+        description: "Bloque normal con encabezado",
         value: 'normal',
 
         rowType: ROW_TYPES.normal,
@@ -25,8 +25,8 @@ const SECTION_TYPES = {
     },
 
     toggleable: {
-        name: "builderPToggleableBlock",
-        description: "builderPSectionBlockWithToggle",
+        name: "Alternar bloque",
+        description: "Sección con bloque para alternar",
         value: 'toggleable',
 
         rowType: ROW_TYPES.normal,

@@ -2,7 +2,7 @@
     <div class="add-control-outer" :class="styles.COLUMNS.COL12">
         <div class="add-control-container" @click="openAddControl">
             <span v-html="$form.getIcon('addOutline', '32px', '32px', '#000')"></span>
-            <span>builderSpanAddControl</span>
+            <span>{{$t('builderSpanAddControl')}}</span>
         </div>
     </div>
 </template>
