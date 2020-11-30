@@ -1,5 +1,5 @@
 <template>
-    <SidebarToggleableContainer headline="Validation">
+    <SidebarToggleableContainer headline="Validacion">
 
         <label>
             {{$t('builderLabelValidationTitle')}}

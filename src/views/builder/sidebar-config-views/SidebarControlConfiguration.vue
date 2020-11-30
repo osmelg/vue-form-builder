@@ -9,7 +9,7 @@
         <!-- Control specific configuration / Only render it if the control has specific configuration view -->
         <SidebarToggleableContainer
                 v-if="specificConfigurationView"
-                headline="Control Specific Configuration">
+                headline="Configuracion especifica de elementos">
 
             <component :is="specificConfigurationView"
                        :formData="formData"
