@@ -21,13 +21,11 @@ const messages = {
     message: {
       hello: 'hello world'
     },
-    // builderButtonCreate: 'Create'
   },
   ja: {
     message: {
       hello: 'こんにちは、世界'
     },
-    builderButtonCreate: 'Crear'
   }
 }
 
