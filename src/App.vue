@@ -1,20 +1,6 @@
 <template>
     <div id="app">
-        <section class="section">
-            <div class="card">
-                <div class="card-header">
-                    <div class="card-header-title">Título</div>
-                </div>
-                <div class="card-content">
-                    <p>Card hecha para probar cómo funciona bulma en el builder. Aquí en esta card están conviviendo estilos de Bootstrap y de Bulma. La card en Bulma no sé ve así, por lo que prevalece Bootstrap, deben tener los mismos nombres de clases para las card. Los botones, como son nombres distintos, sí están con Bulma.</p>
-                    <button class="button is-primary">BULMA</button>
-                    <button class="button is-warning">bulma</button>
-                    <p>Aquí están las pruebas del i18n: </p>
-                    <p>En main.js, dentro de la const i18n, puedo cambiar el valor de "locale" por 'en' o por 'ja', que son los dos ejemplos que salen en la const messages</p>
-                    <p class="title is-5">Aquí aparece el message.hello en inglés o en japonés, según lo que diga el locale: {{$t('message.hello')}}</p>
-                </div>
-            </div>
-        </section>
+        <button class="waves-effect waves-light btn blue darken-4 white-text">BOTON MATERIALIZE</button>
         <h1 class="text-center mt-2">Vue-Form-Builder @ v2.0.0 - Development-Preview</h1>
         <p class="text-center">Presented by <strong>Seth (Sandaru) Phat</strong></p>
         <h4 class="text-center mb-3">What you <strong>BUILD</strong> is what you <strong>GOT</strong>.</h4>
@@ -213,6 +199,4 @@
         line-height: 19px;
         color: #ddd;
     }
-
-     @import '~bulma/css/bulma.css';
 </style>

@@ -17,11 +17,11 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "bulma": "^0.6.1",
     "core-js": "^2.6.5",
     "dayjs": "^1.8.28",
     "deep-equal": "^2.0.3",
     "litepicker": "^1.4.6",
+    "materialize-css": "^1.0.0-rc.2",
     "vue": "^2.6.10",
     "vue-i18n": "^7.8.1",
     "vuedraggable": "^2.23.2"
