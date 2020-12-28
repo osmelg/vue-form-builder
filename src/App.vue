@@ -1,6 +1,5 @@
 <template>
     <div id="app">
-        <button class="waves-effect waves-light btn blue darken-4 white-text">BOTON MATERIALIZE</button>
         <h1 class="text-center mt-2">Vue-Form-Builder @ v2.0.0 - Development-Preview</h1>
         <p class="text-center">Presented by <strong>Seth (Sandaru) Phat</strong></p>
         <h4 class="text-center mb-3">What you <strong>BUILD</strong> is what you <strong>GOT</strong>.</h4>
