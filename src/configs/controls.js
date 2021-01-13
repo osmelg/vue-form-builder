@@ -15,6 +15,7 @@ import {
 } from "@/configs/control-config-enum";
 
 // Control-GUI-Component
+import ImageControl from "@/views/controls/ImageControl"
 import InputControl from "@/views/controls/InputControl"
 import TextControl from "@/views/controls/TextControl"
 import ButtonControl from "@/views/controls/ButtonControl"
@@ -37,6 +38,14 @@ import TextConfigView from "@/views/control-configs/TextConfigView";
 import DropdownConfigView from "@/views/control-configs/DropdownConfigView";
 
 const CONTROLS = {
+    image: {
+        name: "Imagen",
+        description: "Imagen descripcion",
+        icon: 'editPencil', // Follow ICON in `icon-facade.js` to see how it works.
+
+        // component mapping
+        fieldComponent: ImageControl
+    },    
     input: {
         name: "Caja de texto",
         description: "Caja de texto de una linea",

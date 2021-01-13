@@ -1,7 +1,7 @@
 <template>
     <div class="form-configuration-block pbottom-10">
         <button :class="styles.BUTTON.PRIMARY" @click="open">
-            <span>{{$t('builderButtonCreate')}}</span>
+            <span>Crear</span>
         </button>
 
     </div>
