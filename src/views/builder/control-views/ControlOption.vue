@@ -2,15 +2,15 @@
     <div class="control-option-container">
 
         <div class="option-control drag-item" title="Re-position / Drag">
-            <span v-html="$form.getIcon('navigationMore', '24px', '24px', '#f1c40f')"></span>
+            <span v-html="$form.getIcon('navigationMore', '24px', '24px', '#3d5265')"></span>
         </div>
 
         <div class="option-control" title="Control Configuration" @click="clickedConfiguration">
-            <span v-html="$form.getIcon('cog', '24px', '24px', '#3498db')"></span>
+            <span v-html="$form.getIcon('cog', '24px', '24px', '#3d5265')"></span>
         </div>
 
         <div class="option-control" title="Delete Control" @click="clickedDelete">
-            <span v-html="$form.getIcon('trash', '24px', '24px', '#e74c3c')"></span>
+            <span v-html="$form.getIcon('trash', '24px', '24px', '#3d5265')"></span>
         </div>
     </div>
 </template>

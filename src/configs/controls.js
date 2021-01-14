@@ -48,8 +48,8 @@ const CONTROLS = {
     },  
 
     input: {
-        name: "Caja de textox",
-        description: "Caja de textox de una linea",
+        name: "Caja de texto",
+        description: "Caja de texto de una línea",
         icon: 'editPencil', // Follow ICON in `icon-facade.js` to see how it works.
 
         // component mapping
@@ -57,8 +57,8 @@ const CONTROLS = {
     },
 
     number: {
-        name: "Caja de numeros",
-        description: "Caja de numeros de una linea - Solo numeros",
+        name: "Caja de números",
+        description: "Caja de números de una línea - Solo números",
 
         configData: {
             isReal: false, // integer or real (float/double)
@@ -81,7 +81,7 @@ const CONTROLS = {
 
     text: {
         name: "Caja de texto",
-        description: "Caja de texto multi lineal",
+        description: "Caja de texto multilineal",
 
         // config data for the input field - it will be merge with the CONTROL_DEFAULT_DATA
         configData: {
@@ -161,7 +161,7 @@ const CONTROLS = {
 
 
     checkbox: {
-        name: "Caja Checkbox",
+        name: "Caja checkbox",
         description: "Caja de checkbox simple",
 
         configData: {
@@ -217,8 +217,8 @@ const CONTROLS = {
     },
 
     button: {
-        name: "Boton",
-        description: "Boton simple",
+        name: "Botón",
+        description: "Botón simple",
         disableValidation: true,
         disableValue: true,
 
@@ -241,7 +241,7 @@ const CONTROLS = {
     },
 
     emptyBlock: {
-        name: "Espacio en blancoEmpty Block",
+        name: "Espacio en blanco",
         description: "Espacio en blanco simple",
         disableValidation: true,
         disableValue: true,
