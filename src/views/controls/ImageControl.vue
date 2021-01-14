@@ -9,7 +9,7 @@
             <img
                 :src="require(`../../assets/imagesbank/${seturl}.jpg`)"
                 alt="Imagen" 
-                style="height:200px; width:200px;">
+                style="height:250px; width:250px; object-fit:cover;">
         </div>
     </div>
 </template>
@@ -26,7 +26,6 @@ export default {
     methods:{
         addImage(){
             this.seturl = this.geturl;
-            console.log('done =o');
         }
     }
 }

@@ -49,7 +49,7 @@ const CONTROLS = {
 
     input: {
         name: "Caja de texto",
-        description: "Caja de texto de una línea",
+        description: "Caja de una línea",
         icon: 'editPencil', // Follow ICON in `icon-facade.js` to see how it works.
 
         // component mapping
@@ -80,8 +80,8 @@ const CONTROLS = {
     },
 
     text: {
-        name: "Caja de texto",
-        description: "Caja de texto multilineal",
+        name: "Caja de texto solo",
+        description: "Caja de texto solo multilineal",
 
         // config data for the input field - it will be merge with the CONTROL_DEFAULT_DATA
         configData: {
