@@ -21,6 +21,7 @@
     "dayjs": "^1.8.28",
     "deep-equal": "^2.0.3",
     "litepicker": "^1.4.6",
+    "mdb-ui-kit": "^3.0.0",
     "vue": "^2.6.10",
     "vue-i18n": "^7.8.1",
     "vuedraggable": "^2.23.2"
