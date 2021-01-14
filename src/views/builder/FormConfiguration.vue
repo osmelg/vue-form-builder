@@ -2,6 +2,8 @@
     <div class="form-configuration-block pbottom-10">
         <button :class="styles.BUTTON.PRIMARY" @click="open">
             <span>{{$t('builderButtonCreate')}}</span>
+            <span v-html="$form.getIcon('cog')"></span>
+            <span>Osmelg</span>
         </button>
 
     </div>
