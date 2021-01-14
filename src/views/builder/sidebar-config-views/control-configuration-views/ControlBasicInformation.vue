@@ -1,39 +1,39 @@
 <template>
     <SidebarToggleableContainer headline="Detalles basicos">
         <div :class="styles.FORM.FORM_GROUP">
-            <label>builderLabelFormUniqueId</label>
+            <label>{{$t('builderLabelFormUniqueId')}}</label>
             <input type="text" :class="styles.FORM.FORM_CONTROL" :value="control.uniqueId" readonly>
         </div>
 
         <div :class="styles.FORM.FORM_GROUP">
-            <label>builderLabelFormName</label>
+            <label>{{$t('builderLabelFormName')}}</label>
             <input type="text" :class="styles.FORM.FORM_CONTROL" v-model="control.name">
         </div>
 
         <div :class="styles.FORM.FORM_GROUP">
-            <label>builderFormLabel</label>
+            <label>{{$t('builderFormLabel')}}</label>
             <input type="text" :class="styles.FORM.FORM_CONTROL" v-model="control.label">
         </div>
 
         <div :class="styles.FORM.FORM_GROUP">
-            <label>builderFormSubLabel</label>
+            <label>{{$t('builderFormSubLabel')}}</label>
             <input type="text" :class="styles.FORM.FORM_CONTROL" v-model="control.subLabel">
         </div>
 
         <div :class="styles.FORM.FORM_GROUP">
             <label>
-                builderFormShowLabel
+                {{$t('builderFormShowLabel')}}
                 <input type="checkbox" v-model="control.isShowLabel">
             </label>
         </div>
 
         <div :class="styles.FORM.FORM_GROUP">
-            <label>builderFormPlaceholder</label>
+            <label>{{$t('builderFormPlaceholder')}}</label>
             <input type="text" :class="styles.FORM.FORM_CONTROL" v-model="control.placeholderText">
         </div>
 
         <div :class="styles.FORM.FORM_GROUP">
-            <label>builderFormDefaultValue</label>
+            <label>{{$t('builderFormDefaultValue')}}</label>
             <input type="text" :class="styles.FORM.FORM_CONTROL" v-model="control.defaultValue">
         </div>
 

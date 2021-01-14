@@ -2,7 +2,7 @@
     <div class="add-section-container" :class="styles.COLUMNS.COL12" @click="showOption">
         <p>
             <span v-html="$form.getIcon('addOutline', '32px', '32px', '#000')"></span>
-            <span>builderSpanAddSection</span>
+            <span>Agregar seccion</span>
         </p>
 
         <div :class="[styles.LIST_GROUP.CONTAINER, 'add-container-list']" v-show="show">
