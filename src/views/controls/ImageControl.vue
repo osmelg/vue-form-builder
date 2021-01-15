@@ -7,7 +7,7 @@
         </select>
         <div v-if="seturl">
             <img
-                :src="require(`../../assets/imagesbank/${seturl}.jpg`)"
+                :src="getImgUrl(seturl)"
                 alt="Imagen" 
                 style="height:250px; width:250px; object-fit:cover;">
         </div>
@@ -26,7 +26,10 @@ export default {
     methods:{
         addImage(){
             this.seturl = this.geturl;
-        }
+        },
+        getImgUrl(pic) {
+            return require(`../../assets/imagesbank/${pic}.jpg`);
+        }        
     }
 }
 </script>
