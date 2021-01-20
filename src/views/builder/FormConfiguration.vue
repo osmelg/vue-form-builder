@@ -3,7 +3,6 @@
         <button :class="styles.BUTTON.PRIMARY" @click="open">
             <span>{{$t('builderButtonCreate')}}</span>
             <span v-html="$form.getIcon('cog')"></span>
-            <span>Osmelg</span>
         </button>
 
     </div>
