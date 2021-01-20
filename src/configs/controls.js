@@ -28,6 +28,7 @@ import NumberControl from "@/views/controls/NumberControl";
 import DropdownControl from "@/views/controls/DropdownControl";
 
 // Control-Config-Component
+import ImageView from "@/views/control-configs/ImageView"
 import TextBlockConfigView from "@/views/control-configs/TextBlockConfigView";
 import ButtonConfigView from "@/views/control-configs/ButtonConfigView";
 import LabelConfigView from "@/views/control-configs/LabelConfigView";
@@ -39,12 +40,15 @@ import DropdownConfigView from "@/views/control-configs/DropdownConfigView";
 
 const CONTROLS = {
     image: {
-        name: "Imagen name",
-        description: "Imagen descripcion",
+        name: "imágenes",
+        description: "imágenes para el formulario",
         icon: 'editPencil', // Follow ICON in `icon-facade.js` to see how it works.
-
+        configData: {
+            geturl: ''
+        },
         // component mapping
-        fieldComponent: ImageControl
+        fieldComponent: ImageControl,
+        configComponent: ImageView,
     },  
 
     input: {
@@ -309,6 +313,7 @@ function createControlData(controlKey) {
     // set default data
     newData.label = CONTROLS[controlKey].name
     newData.type = controlKey
+    // newData.geturl = CONTROLS[controlKey].geturl
 
     // unique ID is a must - I used UUIDv4 => 99% Unique
     newData.uniqueId = "control-" + HELPER.getUUIDv4()
