@@ -115,7 +115,7 @@
      */
     import FormBuilder from "@/components/FormBuilder";
     import FormRenderer from "@/components/FormRenderer";
-    import {DEMO_FORM_DATA} from "@/demo-form-data";
+    import {DEMO_FORM_DATA} from "@/demo-form-data";   
 
     export default {
         components: {

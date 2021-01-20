@@ -1,24 +1,26 @@
 <template>
     <div class="section-config">
         <div class="buttons">
-            <button :class="styles.BUTTON.PRIMARY"
+            <button :class="styles.BUTTON.DEFAULT"
                     title="Push Up"
                     @click="pushUp"
                     v-html="$form.getIcon('arrowUp')"></button>
 
-            <button :class="styles.BUTTON.SECONDARY"
+            <button :class="styles.BUTTON.DEFAULT"
                     title="Push Down"
                     @click="pushDown"
                     v-html="$form.getIcon('arrowDown')"></button>
 
-            <button :class="styles.BUTTON.INFO" @click="openConfiguration">
+            <button :class="styles.BUTTON.PRIMARY" @click="openConfiguration">
                 <span v-html="$form.getIcon('cog')"></span>
-                <span>{{$t('builderButtonConfiguration')}}</span>
+                <!-- <span>{{$t('builderButtonConfiguration')}}</span> -->
+                <span>Configuracion</span>
             </button>
 
             <button :class="styles.BUTTON.DANGER" @click="deleteSection">
                 <span v-html="$form.getIcon('trash')"></span>
-                <span>{{$t('builderButtonDelete')}}</span>
+                <!-- <span>{{$t('builderButtonDelete')}}</span> -->
+                <span>Eliminar</span>
             </button>
         </div>
     </div>
