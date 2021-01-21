@@ -1,6 +1,6 @@
 <template>
     <div>
-        <select type="text" v-model="control.geturl" class="form-select">
+        <select type="text" v-model="control.geturl" :class="styles.FORM.FORM_CONTROL">
             <option v-for="item in api" :key="item.id" :value="item.url">{{item.description}}</option>
         </select>
     </div>

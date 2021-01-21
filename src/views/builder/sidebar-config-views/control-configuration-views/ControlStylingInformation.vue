@@ -1,6 +1,5 @@
 <template>
-    <div></div>
-    <!-- <SidebarToggleableContainer headline="Estilos/Clases">
+    <SidebarToggleableContainer headline="Estilos/Clases">
         <div :class="styles.FORM.FORM_GROUP">
             <label>{{$t('builderLabelStyleContainerClass')}}</label>
             <select :class="styles.FORM.FORM_CONTROL" v-model="control.containerClass">
@@ -12,7 +11,7 @@
             </select>
         </div>
 
-        <div :class="styles.FORM.FORM_GROUP">
+        <!-- <div :class="styles.FORM.FORM_GROUP">
             <label>{{$t('builderLabelStyleContainerAdditionalCasses')}}</label>
             <input type="text" :class="styles.FORM.FORM_CONTROL" v-model="control.additionalContainerClass">
         </div>
@@ -25,8 +24,8 @@
         <div :class="styles.FORM.FORM_GROUP">
             <label>{{$t('builderStyleControlLabelClasess')}}</label>
             <input type="text" :class="styles.FORM.FORM_CONTROL" v-model="control.additionalLabelClass">
-        </div>
-    </SidebarToggleableContainer> -->
+        </div> -->
+    </SidebarToggleableContainer>
 </template>
 
 <script>
