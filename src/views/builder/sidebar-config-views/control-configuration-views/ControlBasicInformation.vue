@@ -1,9 +1,9 @@
 <template>
     <SidebarToggleableContainer headline="Detalles basicos">
-        <div :class="styles.FORM.FORM_GROUP">
+        <!-- <div :class="styles.FORM.FORM_GROUP">
             <label>{{$t('builderLabelFormUniqueId')}}</label>
             <input type="text" :class="styles.FORM.FORM_CONTROL" :value="control.uniqueId" readonly>
-        </div>
+        </div> -->
 
         <div :class="styles.FORM.FORM_GROUP">
             <label>{{$t('builderLabelFormName')}}</label>

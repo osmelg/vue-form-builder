@@ -1,6 +1,6 @@
 <template>
     <div>
-        <select type="text" v-model="control.geturl">
+        <select type="text" v-model="control.geturl" class="form-select">
             <option v-for="item in api" :key="item.id" :value="item.url">{{item.description}}</option>
         </select>
     </div>
@@ -20,9 +20,16 @@ export default {
     methods:{
         getApi(){
             const apiData = [
-                {id: '1', description: 'Logo Qplus', url: 'https://res.cloudinary.com/dghbwroq3/image/upload/v1610983329/1_qta3db.jpg'},
-                {id: '2', description: 'Logo Finning', url: 'https://res.cloudinary.com/dghbwroq3/image/upload/v1610983332/2_bnjvig.jpg'},
-                {id: '3', description: 'Logo Caterpillar', url: 'https://res.cloudinary.com/dghbwroq3/image/upload/v1610983338/3_gpqm8a.jpg'}
+                {id: '1', description: 'Encabezado', url: 'http://qpreq.qplus.com.ar/imgCheckList/header.PNG'},
+                {id: '2', description: 'Engranaje 1', url: 'http://qpreq.qplus.com.ar/imgCheckList/Engranaje1.PNG'},
+                {id: '3', description: 'Engranaje 2', url: 'http://qpreq.qplus.com.ar/imgCheckList/Engranaje2.PNG'},
+                {id: '4', description: 'Engranaje 3', url: 'http://qpreq.qplus.com.ar/imgCheckList/Engranaje3.PNG'},
+                {id: '5', description: 'Engranaje 4', url: 'http://qpreq.qplus.com.ar/imgCheckList/Engranaje4.PNG'},
+                {id: '6', description: 'Distribución Delantera', url: 'http://qpreq.qplus.com.ar/imgCheckList/DistribucionDelantera.PNG'},
+                {id: '7', description: 'Damper', url: 'http://qpreq.qplus.com.ar/imgCheckList/Damper.PNG'},
+                {id: '8', description: 'Volante', url: 'http://qpreq.qplus.com.ar/imgCheckList/Volante.PNG'},
+                {id: '9', description: 'Aire Acondicionado', url: 'http://qpreq.qplus.com.ar/imgCheckList/AireAcondicionado.PNG'},
+                {id: '10', description: 'Soporte', url: 'http://qpreq.qplus.com.ar/imgCheckList/Soporte.PNG'},
             ];
             this.api = apiData;
         },       

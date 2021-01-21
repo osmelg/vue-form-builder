@@ -26,8 +26,6 @@
         />
 
         <hr>
-        <button @click="getData">got cha</button>
-        <pre style="background:grey; color:black;">{{formData}}</pre>
         <p class="copyright-text" v-text="copyrightText"></p>
     </div>
 </template>
