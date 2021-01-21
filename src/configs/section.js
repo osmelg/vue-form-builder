@@ -80,8 +80,8 @@ function createNewSection(type, sortOrder = 0) {
     let newSectionData = HELPER.cloneDeep(SECTION_DEFAULT_DATA)
     newSectionData.type = type
     newSectionData.uniqueId = "section-" + HELPER.getUUIDv4()
-    newSectionData.headline = "Nueva Sección"
-    newSectionData.subHeadline = "Sub título de la nueva sección"
+    newSectionData.headline = "Nueva sección"
+    newSectionData.subHeadline = "Subtítulo de la nueva sección"
     newSectionData.sortOrder = sortOrder
 
     return newSectionData;

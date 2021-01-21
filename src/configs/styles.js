@@ -43,13 +43,13 @@ const STYLES = {
      * Button Classes
      */
     BUTTON: {
-        PRIMARY: "btn btn-primary",
-        SECONDARY: "btn btn-light",
-        DEFAULT: "btn btn-default",
-        SUCCESS: "btn btn-success",
-        DANGER: "btn btn-danger",
-        WARNING: "btn btn-warning",
-        INFO: "btn btn-light",
+        PRIMARY: "btn btn-primary md-button md-raised md-primary md-theme-default",
+        SECONDARY: "btn btn-secondary md-button md-raised md-secondary md-theme-default",
+        DEFAULT: "btn btn-default md-button md-raised md-default md-theme-default",
+        SUCCESS: "btn btn-success md-button md-raised md-success md-theme-default",
+        DANGER: "btn btn-danger md-button md-raised md-accent md-theme-default",
+        WARNING: "btn btn-warning md-button md-raised md-warning md-theme-default",
+        INFO: "btn btn-info md-button md-raised md-info md-theme-default",
     },
 
     /**

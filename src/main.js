@@ -9,8 +9,6 @@ import App from './App.vue'
 import {VueFormBuilderPlugin} from "@/index";
 // import messages from './views/builder/prueba-locales.json';
 import VueI18n from 'vue-i18n';
-import * as mdb from 'mdb-ui-kit';
-
 
 Vue.config.productionTip = false;
 
@@ -106,8 +104,8 @@ const messages = {
     "builderTextDroppableZoneControls": "Zona desplegable para controles",
     "builderHMainFormConfiguration": "Configuración del formulario principal",
     "builderLabelFormHeadline": "Título del formulario",
-    "builderLabelFormSubHeadline": "Sub titulo del formulario",
-    "builderLabelShowFormHeadline": "Mostrar titulo",
+    "builderLabelFormSubHeadline": "Subtítulo del formulario",
+    "builderLabelShowFormHeadline": "Mostrar título",
     "builderLabelFormWrapper": "Agregar formulario desde afuera?",
     "builderButtonSave": "Guardar",
     "builderButtonSaveAndClose": "Guardar y cerrar",
@@ -146,6 +144,5 @@ const i18n = new VueI18n({
 
 new Vue({
   i18n,
-  mdb,
   render: h => h(App)
 }).$mount('#app')
