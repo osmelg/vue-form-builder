@@ -19,7 +19,8 @@
                          :parent-id="section.uniqueId" />
 
             <p v-if="!hasControl">
-                Droppable Zone / Controls will be showed here...
+                <!-- {{$t('builderTextDroppableZoneControls')}} -->
+                Control drop
             </p>
         </draggable>
 

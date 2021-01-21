@@ -15,6 +15,7 @@ import {
 } from "@/configs/control-config-enum";
 
 // Control-GUI-Component
+import ImageControl from "@/views/controls/ImageControl"
 import InputControl from "@/views/controls/InputControl"
 import TextControl from "@/views/controls/TextControl"
 import ButtonControl from "@/views/controls/ButtonControl"
@@ -27,6 +28,7 @@ import NumberControl from "@/views/controls/NumberControl";
 import DropdownControl from "@/views/controls/DropdownControl";
 
 // Control-Config-Component
+import ImageView from "@/views/control-configs/ImageView"
 import TextBlockConfigView from "@/views/control-configs/TextBlockConfigView";
 import ButtonConfigView from "@/views/control-configs/ButtonConfigView";
 import LabelConfigView from "@/views/control-configs/LabelConfigView";
@@ -37,9 +39,21 @@ import TextConfigView from "@/views/control-configs/TextConfigView";
 import DropdownConfigView from "@/views/control-configs/DropdownConfigView";
 
 const CONTROLS = {
+    image: {
+        name: "imágenes",
+        description: "imágenes para el formulario",
+        icon: 'editPencil', // Follow ICON in `icon-facade.js` to see how it works.
+        configData: {
+            geturl: ''
+        },
+        // component mapping
+        fieldComponent: ImageControl,
+        configComponent: ImageView,
+    },  
+
     input: {
-        name: "Input Field",
-        description: "Input text single line",
+        name: "Caja de texto",
+        description: "Caja de una línea",
         icon: 'editPencil', // Follow ICON in `icon-facade.js` to see how it works.
 
         // component mapping
@@ -47,8 +61,8 @@ const CONTROLS = {
     },
 
     number: {
-        name: "Number Input Field",
-        description: "Input text single line - Number Only",
+        name: "Caja de números",
+        description: "Caja de números de una línea - Solo números",
 
         configData: {
             isReal: false, // integer or real (float/double)
@@ -70,8 +84,8 @@ const CONTROLS = {
     },
 
     text: {
-        name: "Text Field",
-        description: "Multiple line text field",
+        name: "Caja de texto solo",
+        description: "Caja de texto solo multilineal",
 
         // config data for the input field - it will be merge with the CONTROL_DEFAULT_DATA
         configData: {
@@ -93,8 +107,8 @@ const CONTROLS = {
     // },
 
     date: {
-        name: "Date Picker",
-        description: "Simple date picker field",
+        name: "Calendario",
+        description: "Calendario simple",
 
         configData: {
             format: "DD/MM/YYYY",
@@ -128,8 +142,8 @@ const CONTROLS = {
     // },
 
     dropDown: {
-        name: "Dropdown",
-        description: "Dropdown select from a list",
+        name: "Lista desplegable",
+        description: "Lista desplegable simple",
 
         configData: {
             dataMode: DROPDOWN_DATA_MODES.list.val, // normal - api
@@ -151,8 +165,8 @@ const CONTROLS = {
 
 
     checkbox: {
-        name: "Checkbox List",
-        description: "Checkbox list items (Multiple Select)",
+        name: "Caja checkbox",
+        description: "Caja de checkbox simple",
 
         configData: {
             displayMode: RADIO_CHECKBOX_STYLE.line.val, // line by line / next to each others / 2 items per line
@@ -172,8 +186,8 @@ const CONTROLS = {
     },
 
     radio: {
-        name: "Radio List",
-        description: "Radio-Button list items (Single Select)",
+        name: "Caja de radio",
+        description: "Caja de radio simple",
 
         configData: {
             displayMode: RADIO_CHECKBOX_STYLE.line.val, // line by line / next to each others / 2 items per line
@@ -190,7 +204,7 @@ const CONTROLS = {
 
     label: {
         name: "Label",
-        description: "Simple label text show up in your Form",
+        description: "Label simple",
         disableValue: true,
         
         configData: {
@@ -207,8 +221,8 @@ const CONTROLS = {
     },
 
     button: {
-        name: "Button",
-        description: "Simple button for your own purpose",
+        name: "Botón",
+        description: "Botón simple",
         disableValidation: true,
         disableValue: true,
 
@@ -231,8 +245,8 @@ const CONTROLS = {
     },
 
     emptyBlock: {
-        name: "Empty Block",
-        description: "Empty block to design your section/row.",
+        name: "Espacio en blanco",
+        description: "Espacio en blanco simple",
         disableValidation: true,
         disableValue: true,
 
@@ -245,8 +259,8 @@ const CONTROLS = {
     },
 
     textBlock: {
-        name: "Text Block",
-        description: "Block with text only (without any controls)",
+        name: "Bloque de texto",
+        description: "Bloque de texto simple",
         disableValidation: true,
         disableValue: true, // if you provide this, the control field value will not be recorded.
 
@@ -299,6 +313,7 @@ function createControlData(controlKey) {
     // set default data
     newData.label = CONTROLS[controlKey].name
     newData.type = controlKey
+    // newData.geturl = CONTROLS[controlKey].geturl
 
     // unique ID is a must - I used UUIDv4 => 99% Unique
     newData.uniqueId = "control-" + HELPER.getUUIDv4()

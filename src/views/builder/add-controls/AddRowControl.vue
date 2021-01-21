@@ -1,6 +1,6 @@
 <template>
     <div class="add-row-outer">
-        <div class="add-row-container" :class="styles.COLUMNS.COL12" @click="addNew">
+        <div class="add-row-container" :class="styles.COLUMNS.COL3" @click="addNew">
             <span v-html="$form.getIcon('addOutline', '32px', '32px', '#000')"></span>
             <span>Add Row</span>
         </div>

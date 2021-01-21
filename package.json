@@ -1,11 +1,11 @@
 {
-  "name": "v-form-builder",
-  "version": "2.0.1",
-  "description": "Vue Form Builder PRO MAX built from top of Vue. Super dynamic and flexible including Drag and Drop feature.",
+  "name": "qplus-builder",
+  "version": "1.1.1",
+  "description": "QPlus Builder",
   "author": {
-    "email": "phattranminh@gmail.com",
-    "name": "Phat Tran",
-    "url": "https://sethphat.com"
+    "email": "osmelguarepo@gmail.com",
+    "name": "Osmel Guarepo",
+    "url": "https://osmelg.com"
   },
   "private": false,
   "license": "MIT",
@@ -22,6 +22,7 @@
     "deep-equal": "^2.0.3",
     "litepicker": "^1.4.6",
     "vue": "^2.6.10",
+    "vue-i18n": "^7.8.1",
     "vuedraggable": "^2.23.2"
   },
   "devDependencies": {
@@ -48,14 +49,6 @@
     "url": "https://github.com/sethsandaru/vue-form-builder.git"
   },
   "keywords": [
-    "vue-form-builder",
-    "v-form-builder",
-    "vue form builder with drag drop",
-    "vue form builder pro max",
-    "vue",
-    "vuejs",
-    "form builder",
-    "drag & drop",
-    "seth phat"
+    "vue-form-builder"
   ]
 }

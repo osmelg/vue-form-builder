@@ -1,8 +1,8 @@
 <template>
-    <div class="form-configuration-block pbottom-10">
+    <div class="form-configuration-block pbottom-10" style="display:flex; justify-content: flex-end; align-items: center;">
         <button :class="styles.BUTTON.PRIMARY" @click="open">
+            <span>{{$t('builderButtonCreate')}}</span>
             <span v-html="$form.getIcon('cog')"></span>
-            <span>Osmelg</span>
         </button>
 
     </div>

@@ -1,7 +1,8 @@
 <template>
     <div class="sidebar-form-configuration">
 
-        <h5>Choose your Control</h5>
+        <h5>{{$t('builderHChooseElementsTitle')}}</h5>
+        <!-- <h5>Elegir titulo</h5> -->
 
 
         <div :class="[styles.LIST_GROUP.CONTAINER]">
@@ -9,7 +10,7 @@
             <a href="javascript:void(0)"
                :class="styles.LIST_GROUP.SINGLE_ITEM"
                v-for="(controlInfo, controlKey) in controlTypes"
-               @click="selectedControl(controlKey)">
+               @click="selectedControl(controlKey)" :key="controlInfo.name">
 
                 <p class="type-headline" v-text="controlInfo.name"></p>
                 <p class="type-desc" v-text="controlInfo.description"></p>

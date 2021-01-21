@@ -26,7 +26,6 @@
         />
 
         <hr>
-
         <p class="copyright-text" v-text="copyrightText"></p>
     </div>
 </template>
@@ -38,7 +37,7 @@
     import FormBuilderBusiness from "@/mixins/form-builder-mixins";
     import FormConfiguration from "@/views/builder/FormConfiguration";
     import GlobalSidebar from "@/views/builder/GlobalSidebar";
-
+    
     export default {
         name: "FormBuilder",
         components: {
@@ -56,6 +55,12 @@
                 controls: {},
             },
         }),
+
+        methods:{
+            getData(){
+                console.log(this.formData)
+            }
+        },
 
         created() {
             if (this.value && typeof this.value === 'object') {

@@ -2,7 +2,7 @@
     <div class="add-section-container" :class="styles.COLUMNS.COL12" @click="showOption">
         <p>
             <span v-html="$form.getIcon('addOutline', '32px', '32px', '#000')"></span>
-            <span>Add Section</span>
+            <span>Agregar seccion</span>
         </p>
 
         <div :class="[styles.LIST_GROUP.CONTAINER, 'add-container-list']" v-show="show">
@@ -10,10 +10,10 @@
             <a href="javascript:void(0)"
                :class="styles.LIST_GROUP.SINGLE_ITEM"
                v-for="(sectionInfo, sectionKey) in sectionTypes"
-               @click="addNew(sectionKey)">
+               @click="addNew(sectionKey)" :key="sectionInfo.name">
 
-                <p class="type-headline" v-text="sectionInfo.name"></p>
-                <p class="type-desc" v-text="sectionInfo.description"></p>
+                <p class="type-headline">{{sectionInfo.name}}</p>
+                <p class="type-desc">{{sectionInfo.description}}</p>
 
             </a>
 

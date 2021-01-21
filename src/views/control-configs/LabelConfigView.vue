@@ -1,11 +1,11 @@
 <template>
     <div>
         <div :class="styles.FORM.FORM_GROUP">
-            <label>For-Attribute to Control?</label>
+            <label>{{$t('builderLabelControlCicle')}}</label>
             <select :class="styles.FORM.FORM_CONTROL"
                     @input="selectedFor"
             >
-                <option>None</option>
+                <option>{{$t('builderLabelControlCicleNone')}}None</option>
 
                 <option v-for="item in listControlData"
                         :key="item.value"
