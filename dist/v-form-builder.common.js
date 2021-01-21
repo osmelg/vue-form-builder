@@ -16213,14 +16213,13 @@ var STYLES = {
    * Button Classes
    */
   BUTTON: {
-    PRIMARY: "btn btn-primary",
-    // PRIMARY: "btn btn-primary md-button md-raised md-primary md-theme-default",
+    PRIMARY: "btn btn-primary md-button md-raised md-primary md-theme-default",
     SECONDARY: "btn btn-secondary md-button md-raised md-secondary md-theme-default",
     DEFAULT: "btn btn-default md-button md-raised md-default md-theme-default",
     SUCCESS: "btn btn-success md-button md-raised md-success md-theme-default",
     DANGER: "btn btn-danger md-button md-raised md-accent md-theme-default",
     WARNING: "btn btn-warning md-button md-raised md-warning md-theme-default",
-    INFO: "btn btn-secondary"
+    INFO: "btn btn-info md-button md-raised md-info md-theme-default"
   },
 
   /**
@@ -18200,8 +18199,8 @@ function createNewSection(type) {
   var newSectionData = helper["a" /* HELPER */].cloneDeep(SECTION_DEFAULT_DATA);
   newSectionData.type = type;
   newSectionData.uniqueId = "section-" + helper["a" /* HELPER */].getUUIDv4();
-  newSectionData.headline = "Nueva Sección";
-  newSectionData.subHeadline = "Sub título de la nueva sección";
+  newSectionData.headline = "Nueva sección";
+  newSectionData.subHeadline = "Subtítulo de la nueva sección";
   newSectionData.sortOrder = sortOrder;
   return newSectionData;
 }
